@@ -1,2 +1,2 @@
-# drone-photography-website
+# investing-website
 Testing Github and preloaded templates
