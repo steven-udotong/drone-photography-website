@@ -22,6 +22,9 @@ export default function Resources() {
           DD (due dillegence) and general sentiment around stocks/cryptos which can help explain price changes in stocks. 
           </p>
         <p>
+          (Click <a href="/spytweets/"> here</a> to see recent S&P500 stock tweets)
+          </p>
+        <p>
           The tweets on a given $XYZ stock are divided into three subcategories: bullish, bearish, and neutral.
           Bullish meaning they are expecting prices to rise, bearish meaning they expect prices to drop, and 
           neutral is an expectation of sideways movement.

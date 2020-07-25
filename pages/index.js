@@ -2,9 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 
 export default function Home() {
+
   return (
+
+    <div>
     <Layout>
-      <h1>Investing</h1>
+      <h1>Finanical Awareness</h1>
       <p>
         In school, we were never taught about money aside from some optional accounting classes,
         and even then, we didn't learn how to make money.
@@ -24,7 +27,7 @@ export default function Home() {
         cannot control your emotions, you cannot control your money." 
       </p>
       <p>
-        Do your own research, and know what you own.
+        You have to do your own research, and know what you own.
           </p>  
       <p>
       ----------------------------------------------------------------------------------------
@@ -33,5 +36,48 @@ export default function Home() {
         © 2020, Built with Gatsby
         </p>
     </Layout>
+    </div>
   );
+  
 }
+
+
+/*
+
+import { graphql } from 'gatsby';
+
+export const query = graphql`
+  {
+    allStockTweet {
+      nodes {
+        id
+        created_at
+        body
+        user {
+          username
+        }
+      }
+    }
+  }
+`
+
+export default ({ data }) => {
+  console.log(data)
+  return (
+    <>
+      <h1>Stock Tweets for SPY shares</h1>
+      <ul>
+        {data.allStockTweet.nodes.map(event => (
+          <li key={event.id}>
+            <h2>Date Created: {event.created_at}</h2>
+            <p>Username: {event.user.username}</p>
+            <p>SPY Tweet: {event.body}</p>
+          </li>
+        ))}
+      </ul>
+    </>
+)}
+
+*/
+  
+  
