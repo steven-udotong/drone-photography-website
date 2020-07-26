@@ -1,0 +1,26 @@
+{
+  "name": "@steve-udotong/gatsby-stocktwits-symbol",
+  "version": "1.0.0",
+  "main": "gatsby-node.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "description": "Pulls data about recent stocktwit messages under a given stock symbol, (EX: SPY, AAPL, TSLA)",
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steven-udotong/gatsby-stocktwitsAPI-plugin.git"
+  },
+  "keywords": [
+    "stocktwits"
+  ],
+  "author": "Steve Udotong",
+  "bugs": {
+    "url": "https://github.com/steven-udotong/gatsby-stocktwitsAPI-plugin/issues"
+  },
+  "homepage": "https://github.com/steven-udotong/gatsby-stocktwitsAPI-plugin#readme"
+}
