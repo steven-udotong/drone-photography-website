@@ -1,11 +1,19 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+}); 
 
 module.exports = {
+  
   plugins: [
+    
+    {
+      resolve: 'gatsby-stocktwits-symbol',
+      options: {
+        apikey: process.env.STOCKTWITS_API_KEY,   
+        stockId: 'SPY',     
+      }
+    },
+    
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -13,4 +21,9 @@ module.exports = {
       },
     },
   ],
+  siteMetadata: {
+    title: "Steve's Investing Site",
+    author: "Steve Udotong",
+  }
 }
+
