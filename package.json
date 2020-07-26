@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "react-scripts build && cp build/index.html build/200.html",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
@@ -14,8 +14,11 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.21.13",
     "gatsby-plugin-typography": "^2.5.1",
+    "gatsby-source-graphql": "^2.5.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-typography": "^0.16.19",
